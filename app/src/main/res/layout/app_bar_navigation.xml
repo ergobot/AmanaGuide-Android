@@ -41,7 +41,7 @@
     <!--android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
 
 
-
+    <!-- This is a plain appbar with behavior-->
     <!--<android.support.design.widget.AppBarLayout-->
         <!--android:id="@+id/appbarlayout"-->
         <!--android:layout_width="match_parent"-->
@@ -56,11 +56,14 @@
             <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
     <!--</android.support.design.widget.AppBarLayout>-->
 
-    <LinearLayout
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/toolbarlayout"
-        >
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_behavior="com.placesware.amanaguide.bottomsheet.FirstAppBarLayoutBehavior">
 
         <android.support.v7.widget.CardView
             android:id="@+id/map_toolbar_container"
@@ -86,7 +89,41 @@
             </android.support.v7.widget.Toolbar>
 
         </android.support.v7.widget.CardView>
-    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- This is a cardview appbar without behavior -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/toolbarlayout"-->
+        <!--&gt;-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/map_toolbar_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="8dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardBackgroundColor="#324">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorPrimaryLight"-->
+                <!--android:minHeight="?attr/actionBarSize">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Search events"-->
+                    <!--android:id="@+id/toolbar_title" />-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
 
 
 
