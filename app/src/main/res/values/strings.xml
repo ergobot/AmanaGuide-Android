@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Amana Guide</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Custom -->
+    <string name="key_binding_default_toolbar_name">Modal-Toolbar-Title</string>
+    <string name="dummy_text">Lorem Ipsum
+
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut fringilla nibh. Donec gravida tellus non felis volutpat, id maximus massa blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero erat, vel interdum nibh convallis euismod. Quisque vel sapien nec massa vulputate ultrices. Morbi tortor arcu, laoreet eu laoreet sit amet, sollicitudin ac tellus. Nam a mauris hendrerit, interdum diam at, volutpat velit. Fusce rutrum lorem ac ultricies viverra. Pellentesque ut tellus elit. Etiam in elementum erat. Mauris imperdiet dolor nec magna pulvinar vehicula.
+    </string>
+
+
+</resources>
