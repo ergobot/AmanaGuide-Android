@@ -1,5 +1,6 @@
 package com.placesware.amanaguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
@@ -18,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.placesware.amanaguide.bottomsheet.BottomSheetBehaviorGoogleMapsLike;
 
 public class NavigationActivity extends AppCompatActivity
@@ -151,6 +153,10 @@ public class NavigationActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+        // sign out
+//        FirebaseAuth.getInstance().signOut();
+//        startActivity(new Intent(getApplicationContext(), GoogleSignInActivity.class));
+//        finish();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
